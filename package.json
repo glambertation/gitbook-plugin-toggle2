@@ -2,7 +2,7 @@
     "name": "gitbook-plugin-toggle2",
     "description": "Toggle Chapters on GitBook",
     "main": "index.js",
-    "version": "0.0.1",
+    "version": "5.3.4",
     "engines": {
         "gitbook": "*"
     },
@@ -11,9 +11,11 @@
         "type": "git",
         "url": "https://github.com/glambertation/gitbook-plugin-toggle2.git"
     },
+    "gitbookserver": "http://techblog.bytedance.net",
     "license": "Apache 2",
     "bugs": {
         "url": "https://github.com/glambertation/gitbook-plugin-toggle2/issues"
     },
     "author": "song <glambertation@gmail.com>"
 }
+
