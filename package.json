@@ -2,7 +2,7 @@
     "name": "gitbook-plugin-toggle2",
     "description": "Toggle Chapters on GitBook",
     "main": "index.js",
-    "version": "5.3.4",
+    "version": "6.2.2",
     "engines": {
         "gitbook": "*"
     },
