@@ -6,7 +6,7 @@
     "engines": {
         "gitbook": "*"
     },
-    "homepage": "hhttps://github.com/glambertation/gitbook-plugin-toggle2",
+    "homepage": "https://github.com/glambertation/gitbook-plugin-toggle2",
     "repository": {
         "type": "git",
         "url": "https://github.com/glambertation/gitbook-plugin-toggle2.git"
