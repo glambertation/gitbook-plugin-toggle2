@@ -88,6 +88,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 // hide all
     $('li.chapter').children('ul.articles').hide();
 
+
     $chapter = $('li.chapter.active');
     $shy = $('li.chapter.active').attr("data-level");
 
@@ -102,6 +103,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     }
 
 // click to toggle
+
 
     toggle2($chapter);
     $hai = $('li.chapter.active').attr("data-level");
