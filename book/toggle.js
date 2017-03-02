@@ -1,4 +1,4 @@
-require(["gitbook", "jQuery"], function(gitbook, $) {
+require(["gitbook","jQuery"], function(gitbook, $) {
 
 // expand the parent
   function expand(chapter) {
@@ -46,7 +46,20 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         
 
       }
+
       if($shy =='1.2'){
+
+            $chapter.click(function(){
+              if(event.target.href=="http://techblog.bytedance.net/janfeb17"){
+                $chapter.next().children('ul.articles').toggle();
+              }
+            });
+
+
+      }  
+
+
+      if($shy =='1.3'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/internal_techblog/"){
@@ -55,7 +68,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             });
 
       }
-      if($shy =='1.3'){
+      if($shy =='1.4'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/chapter1/"){
@@ -64,7 +77,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             });
 
       }
-      if($shy =='1.4'){
+      if($shy =='1.5'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/chapter2/"){
