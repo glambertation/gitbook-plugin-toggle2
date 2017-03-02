@@ -21,16 +21,17 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         chapter.parent().attr('class') != 'book-summary' &&
         chapter.length !=0
       ){
-
+        
         chapter.show();
       }
-
+    
+      
       if (chapter.children().length !=0){
 
         expand2(chapter.children());
 
       }
-
+          
   }
 
     function toggle2(chapter) {
@@ -42,18 +43,10 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
                 $chapter.next().children('ul.articles').toggle();
               }
             });
+        
 
       }
       if($shy =='1.2'){
-
-            $chapter.click(function(){
-                if(event.target.href=="http://techblog.bytedance.net/janfeb17/"){
-                    $chapter.children('ul.articles').toggle();
-                }
-            });
-
-      }
-      if($shy =='1.3'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/internal_techblog/"){
@@ -62,7 +55,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             });
 
       }
-      if($shy =='1.4'){
+      if($shy =='1.3'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/chapter1/"){
@@ -71,7 +64,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             });
 
       }
-      if($shy =='1.5'){
+      if($shy =='1.4'){
 
             $chapter.click(function(){
                 if(event.target.href=="http://techblog.bytedance.net/chapter2/"){
@@ -81,12 +74,15 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 
       }
 
+
+
+
     }
 
   gitbook.events.bind("page.change", function() {
 
 // hide all
-    $('li.chapter').children('ul.articles').hide();
+    $('li.chapter').children('ul.articles').hide(); 
 
 
     $chapter = $('li.chapter.active');
@@ -104,13 +100,14 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 
 // click to toggle
 
-
     toggle2($chapter);
     $hai = $('li.chapter.active').attr("data-level");
 
-//add
-
+    ba("create", "70f1bc699510e4");
+    ba('send','event','doc',event.target.responseURL);
+    ba("send", "pageview");
 
   });
 
 });
+
