@@ -103,9 +103,22 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     toggle2($chapter);
     $hai = $('li.chapter.active').attr("data-level");
 
-    ba("create", "70f1bc699510e4");
-    ba('send','event','doc',event.target.responseURL);
-    ba("send", "pageview");
+// add tongji
+
+
+//    ba("create", "70f1bc699510e4");
+//    ba('send','event','doc',event.target.responseURL);
+//    ba("send", "pageview");
+
+!function (e, t, n, a, c) {
+    e.ToutiaoAnalyticsObject = n, e[n] = e[n] || function () {
+        (e[n].q = e[n].q || []).push(arguments)
+    }, e[n].t = 1 * new Date, e[n].s = c;
+    var s = t.createElement("script");
+    s.async = 1, s.src = a, t.getElementsByTagName("head")[0].appendChild(s)
+}(window, document, "ba", "//s3.bytecdn.cn/ta/resource/v0/analytics.js?v=0.2.0");
+ba("create", "70f1bc699510e4");
+ba("send", "pageview");
 
   });
 
