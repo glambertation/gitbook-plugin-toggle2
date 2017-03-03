@@ -50,7 +50,7 @@ require(["gitbook","jQuery"], function(gitbook, $) {
       if($shy =='1.2'){
 
             $chapter.click(function(){
-              if(event.target.href=="http://techblog.bytedance.net/janfeb17"){
+              if(event.target.href=="http://techblog.bytedance.net/janfeb17/"){
                 $chapter.next().children('ul.articles').toggle();
               }
             });
