@@ -51,7 +51,7 @@ require(["gitbook","jQuery"], function(gitbook, $) {
 
             $chapter.click(function(){
               if(event.target.href=="http://techblog.bytedance.net/janfeb17/"){
-                $chapter.next().children('ul.articles').toggle();
+                $chapter.children('ul.articles').toggle();
               }
             });
 
